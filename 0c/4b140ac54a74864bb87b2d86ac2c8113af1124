@@ -1,0 +1,29 @@
+nodes/FeishuNode/resource/message/MessageRobotWebhookPushOperate.ts
+  s_e4793ec2bf3875::t_947219c762e3fe 1-188
+package.json
+  s_e4793ec2bf3875::t_85be7e7271d684 41
+nodes/help/utils/RequestUtils.ts
+  s_e4793ec2bf3875::t_8126e4cfeff4a0 41
+  s_e4793ec2bf3875::t_947219c762e3fe 42
+credentials/FeishuBotWebhookApi.credentials.ts
+  s_e4793ec2bf3875::t_947219c762e3fe 1-28
+nodes/FeishuNode/FeishuNode.node.ts
+  s_e4793ec2bf3875::t_2b5c99832b91dd 54
+  s_e4793ec2bf3875::t_947219c762e3fe 52-53,55-61,77-80
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.2",
+  "base_commit_sha": "0c4b140ac54a74864bb87b2d86ac2c8113af1124",
+  "prompts": {},
+  "sessions": {
+    "s_e4793ec2bf3875": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a07a11-edbe-7672-a637-7b333df3a525",
+        "model": "gpt-5.5"
+      },
+      "human_author": "Peter Song <123wuming_123@163.com>"
+    }
+  }
+}
