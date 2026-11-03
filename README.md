@@ -24,7 +24,7 @@
 ### 首次启用（仅一次）
 
 1. npm 包名必须属于你有权限的账号。本仓库使用 `@songlipeng2003/n8n-nodes-feishu-lite`，与上游包独立。
-2. 新包必须先通过已登录的 npm 账号执行一次 `npm publish --access public`，完成首次创建。
+2. 新包必须先通过已登录的 npm 账号执行一次 `npm publish --access public`，完成首次创建。 若 npm 返回双因素验证相关的 `403`，需要在本机终端使用 `--otp` 参数完成验证；不要将一次性验证码或 Token 发到聊天、写入工作流或提交到仓库。
 3. 在 npm 包设置的 **Trusted publishing** 中添加 GitHub Actions，填写：
    - Organization or user：`songlipeng2003`
    - Repository：`n8n-nodes-feishu-lite`
