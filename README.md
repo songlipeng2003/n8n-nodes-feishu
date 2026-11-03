@@ -1,3 +1,9 @@
+# n8n-nodes-feishu-lite
+
+本仓库由 [songlipeng2003](https://github.com/songlipeng2003) 维护，基于 [other-blowsnow/n8n-nodes-feishu-lite](https://github.com/other-blowsnow/n8n-nodes-feishu-lite) 的开源项目，保留原项目作者署名及 MIT 许可证。
+
+本分支增加飞书自定义机器人 Webhook 推送，支持文本、富文本、图片、群名片、交互卡片、原始 JSON 请求体及可选签名校验。使用时选择“自定义机器人 Webhook 凭证”，然后选择“消息”下的“机器人推送”。
+
 <img width="1017" height="970" alt="image" src="https://github.com/user-attachments/assets/cbac0a34-dada-4450-86cd-506634a2abfe" />
 
 # 使用案例

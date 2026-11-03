@@ -1,6 +1,6 @@
 {
   "name": "n8n-nodes-feishu-lite",
-  "version": "0.4.5",
+  "version": "0.4.6",
   "description": "feishu node",
   "keywords": [
     "n8n-community-node-package",
@@ -8,14 +8,14 @@
     "飞书"
   ],
   "license": "MIT",
-  "homepage": "",
+  "homepage": "https://github.com/songlipeng2003/n8n-nodes-feishu-lite#readme",
   "author": {
     "name": "blowsnow",
     "email": "im.blowsnow@gmail.com"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/other-blowsnow/n8n-nodes-feishu-lite"
+    "url": "git+https://github.com/songlipeng2003/n8n-nodes-feishu-lite.git"
   },
   "engines": {
     "node": ">=18.10",
@@ -32,7 +32,9 @@
     "prepublishOnly": "pnpm build && pnpm lint -c .eslintrc.prepublish.js nodes credentials package.json"
   },
   "files": [
-    "dist"
+    "dist/nodes",
+    "dist/credentials",
+    "CHANGELOG.md"
   ],
   "n8n": {
     "n8nNodesApiVersion": 1,
@@ -60,8 +62,15 @@
     "n8n-workflow": "^1.115.0"
   },
   "dependencies": {
-    "form-data": "^4.0.1",
-    "glob": "^10.4.5",
+    "form-data": "^4.0.6",
+    "glob": "^10.5.0",
     "xml-js": "^1.6.11"
+  },
+  "bugs": {
+    "url": "https://github.com/songlipeng2003/n8n-nodes-feishu-lite/issues"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
   }
 }

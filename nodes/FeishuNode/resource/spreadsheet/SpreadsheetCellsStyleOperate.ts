@@ -30,6 +30,13 @@ const SpreadsheetCellsStyleOperate: ResourceOperations = {
 			default: {},
 			options: [
 				{
+					displayName: '垂直对齐方式',
+					name: 'vAlign',
+					type: 'number',
+					default: 0,
+					description: '垂直对齐方式。可选值：0：上对齐，1：中对齐，2：下对齐。',
+				},
+				{
 					displayName: '字体相关样式',
 					name: 'font',
 					type: 'collection',
@@ -63,6 +70,20 @@ const SpreadsheetCellsStyleOperate: ResourceOperations = {
 					],
 				},
 				{
+					displayName: '字体颜色',
+					name: 'foreColor',
+					type: 'color',
+					default: '',
+					description: '字体颜色，用十六进制颜色代码表示。',
+				},
+				{
+					displayName: '数字格式',
+					name: 'formatter',
+					type: 'string',
+					default: '',
+					description: '数字格式，详见电子表格支持的数字格式类型。',
+				},
+				{
 					displayName: '文本装饰',
 					name: 'textDecoration',
 					type: 'options',
@@ -87,32 +108,11 @@ const SpreadsheetCellsStyleOperate: ResourceOperations = {
 					],
 				},
 				{
-					displayName: '数字格式',
-					name: 'formatter',
-					type: 'string',
-					default: '',
-					description: '数字格式，详见电子表格支持的数字格式类型。',
-				},
-				{
 					displayName: '水平对齐方式',
 					name: 'hAlign',
 					type: 'number',
 					default: 0,
 					description: '水平对齐方式。可选值：0：左对齐，1：中对齐，2：右对齐。',
-				},
-				{
-					displayName: '垂直对齐方式',
-					name: 'vAlign',
-					type: 'number',
-					default: 0,
-					description: '垂直对齐方式。可选值：0：上对齐，1：中对齐，2：下对齐。',
-				},
-				{
-					displayName: '字体颜色',
-					name: 'foreColor',
-					type: 'color',
-					default: '',
-					description: '字体颜色，用十六进制颜色代码表示。',
 				},
 				{
 					displayName: '背景颜色',
