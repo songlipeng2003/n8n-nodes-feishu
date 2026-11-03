@@ -7,3 +7,5 @@
 - 修正电子表格样式选项排序，使发布前的 ESLint 校验通过；不改变参数名及执行逻辑。
 - 同步生产依赖与 pnpm 锁文件，并将 form-data 的最低版本提高到 4.0.6、glob 的最低版本提高到 10.5.0。
 - 收紧 npm 发布文件列表，只包含运行时节点、凭证及发布说明，排除构建缓存和重复的生成包信息。
+- 将独立 npm 包名调整为 @songlipeng2003/n8n-nodes-feishu-lite，避免与上游包冲突。
+- 增加 tag 触发的 GitHub Actions 打包发布流水线，使用 npm OIDC Trusted Publishing；包含版本一致性检查、发布保护测试及稳定版/预发布版分流。

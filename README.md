@@ -1,4 +1,4 @@
-# n8n-nodes-feishu-lite
+# @songlipeng2003/n8n-nodes-feishu-lite
 
 本仓库由 [songlipeng2003](https://github.com/songlipeng2003) 维护，基于 [other-blowsnow/n8n-nodes-feishu-lite](https://github.com/other-blowsnow/n8n-nodes-feishu-lite) 的开源项目，保留原项目作者署名及 MIT 许可证。
 
@@ -13,7 +13,50 @@
 
 # 安装教程
 参考：https://docs.n8n.io/integrations/community-nodes/installation/
-节点名称：n8n-nodes-feishu-lite
+节点名称：`@songlipeng2003/n8n-nodes-feishu-lite`
+
+这是个人维护分支的独立 npm 包，不会更新原作者的 `n8n-nodes-feishu-lite` 包。请勿同时安装两个包含相同节点和凭证名称的包；迁移前请备份工作流和凭证。
+
+## 自动发布到 npm
+
+流水线文件：`.github/workflows/publish-npm.yml`。推送 `v<版本号>` tag 时，流水线会校验 tag 与 `package.json` 一致，安装锁定依赖、运行发布保护测试、编译和 ESLint 校验，再将同一个打包产物发布到 npm，并生成 provenance。稳定版发布到 `latest`，预发布版本（如 `v0.4.7-beta.1`）发布到 `next`。校验或构建失败时不会发布。
+
+### 首次启用（仅一次）
+
+1. npm 包名必须属于你有权限的账号。本仓库使用 `@songlipeng2003/n8n-nodes-feishu-lite`，与上游包独立。
+2. 新包必须先通过已登录的 npm 账号执行一次 `npm publish --access public`，完成首次创建。
+3. 在 npm 包设置的 **Trusted publishing** 中添加 GitHub Actions，填写：
+   - Organization or user：`songlipeng2003`
+   - Repository：`n8n-nodes-feishu-lite`
+   - Workflow filename：`publish-npm.yml`（不要填写完整路径）
+   - Environment name：留空
+   - 允许直接执行 **npm publish**
+4. 也可以使用 npm 11.15.0 或更高版本配置（需完成 npm 的交互式双因素验证）：
+
+```bash
+npm trust github @songlipeng2003/n8n-nodes-feishu-lite \
+  --repo songlipeng2003/n8n-nodes-feishu-lite \
+  --file publish-npm.yml --allow-publish --yes
+```
+
+流水线使用 GitHub OIDC，不需要配置 `NPM_TOKEN`。npm 登录不等于已经配置好 Trusted publishing；未完成以上步骤时，自动发布会因权限不足失败。
+
+### 后续发布
+
+提交代码和版本号后，再推送与版本号一致的 tag。例如，首次手动创建 `0.4.6` 后，下一个补丁版本可以这样发布：
+
+```bash
+npm version patch --no-git-tag-version
+# 更新 CHANGELOG.md 后一起提交
+git add package.json CHANGELOG.md
+git commit -m "chore(release): prepare next version"
+git push origin master
+tag="v$(node -p 'require("./package.json").version')"
+git tag "$tag"
+git push origin "$tag"
+```
+
+不要重复发布已存在的 npm 版本；npm 版本不可覆盖。只创建本地 tag 不会触发流水线，必须推送到 GitHub。可先在 GitHub Actions 中手动运行 **Publish to npm**：手动运行只构建、检查并上传打包产物，不会发布。
 
 # 功能
 ## 知识库

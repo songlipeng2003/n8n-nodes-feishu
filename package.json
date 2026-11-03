@@ -1,5 +1,5 @@
 {
-  "name": "n8n-nodes-feishu-lite",
+  "name": "@songlipeng2003/n8n-nodes-feishu-lite",
   "version": "0.4.6",
   "description": "feishu node",
   "keywords": [
@@ -29,7 +29,8 @@
     "format": "prettier nodes credentials --write",
     "lint": "eslint nodes credentials package.json",
     "lintfix": "eslint nodes credentials package.json --fix",
-    "prepublishOnly": "pnpm build && pnpm lint -c .eslintrc.prepublish.js nodes credentials package.json"
+    "prepublishOnly": "pnpm build && pnpm lint -c .eslintrc.prepublish.js nodes credentials package.json",
+    "test:release": "node --test test/release-info.test.cjs"
   },
   "files": [
     "dist/nodes",
