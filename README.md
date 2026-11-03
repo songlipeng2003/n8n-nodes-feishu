@@ -1,4 +1,4 @@
-# @songlipeng2003/n8n-nodes-feishu-lite
+# @songlipeng2003/n8n-nodes-feishu
 
 本仓库由 [songlipeng2003](https://github.com/songlipeng2003) 维护，基于 [other-blowsnow/n8n-nodes-feishu-lite](https://github.com/other-blowsnow/n8n-nodes-feishu-lite) 的开源项目，保留原项目作者署名及 MIT 许可证。
 
@@ -13,9 +13,15 @@
 
 # 安装教程
 参考：https://docs.n8n.io/integrations/community-nodes/installation/
-节点名称：`@songlipeng2003/n8n-nodes-feishu-lite`
+节点名称：`@songlipeng2003/n8n-nodes-feishu`
 
 这是个人维护分支的独立 npm 包，不会更新原作者的 `n8n-nodes-feishu-lite` 包。请勿同时安装两个包含相同节点和凭证名称的包；迁移前请备份工作流和凭证。
+
+## 从旧包迁移
+
+从 `0.4.8` 起，个人维护分支的 npm 包名由 `@songlipeng2003/n8n-nodes-feishu-lite` 调整为 `@songlipeng2003/n8n-nodes-feishu`。GitHub 仓库仍为 `songlipeng2003/n8n-nodes-feishu-lite`，旧 npm 包及其已发布版本保留不动。
+
+在 n8n 的社区节点设置中使用新包名 `@songlipeng2003/n8n-nodes-feishu` 安装。请先备份工作流和凭证，再移除旧包并安装新包，不要同时安装两个包。节点及凭证的内部名称和功能不变，但已有工作流中的完整节点类型可能包含旧包名前缀，迁移后应检查并重新选择对应节点。
 
 ## 自动发布到 npm
 
@@ -23,7 +29,7 @@
 
 ### 首次启用（仅一次）
 
-1. npm 包名必须属于你有权限的账号。本仓库使用 `@songlipeng2003/n8n-nodes-feishu-lite`，与上游包独立。
+1. npm 包名必须属于你有权限的账号。本仓库使用 `@songlipeng2003/n8n-nodes-feishu`，与上游包独立。
 2. 新包必须先通过已登录的 npm 账号执行一次 `npm publish --access public`，完成首次创建。 若 npm 返回双因素验证相关的 `403`，需要在本机终端使用 `--otp` 参数完成验证；不要将一次性验证码或 Token 发到聊天、写入工作流或提交到仓库。
 3. 在 npm 包设置的 **Trusted publishing** 中添加 GitHub Actions，填写：
    - Organization or user：`songlipeng2003`
@@ -34,7 +40,7 @@
 4. 也可以使用 npm 11.15.0 或更高版本配置（需完成 npm 的交互式双因素验证）：
 
 ```bash
-npm trust github @songlipeng2003/n8n-nodes-feishu-lite \
+npm trust github @songlipeng2003/n8n-nodes-feishu \
   --repo songlipeng2003/n8n-nodes-feishu-lite \
   --file publish-npm.yml --allow-publish --yes
 ```
@@ -43,7 +49,7 @@ npm trust github @songlipeng2003/n8n-nodes-feishu-lite \
 
 ### 后续发布
 
-提交代码和版本号后，再推送与版本号一致的 tag。例如，首次手动创建 `0.4.6` 后，下一个补丁版本可以这样发布：
+提交代码和版本号后，再推送与版本号一致的 tag。完成新包的首次发布和 Trusted Publisher 配置后，后续补丁版本可以这样发布：
 
 ```bash
 npm version patch --no-git-tag-version

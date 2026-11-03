@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.4.8 - 2026-11-03
+
+- 将 npm 包名从 @songlipeng2003/n8n-nodes-feishu-lite 改为 @songlipeng2003/n8n-nodes-feishu。
+- 同步安装说明及新包的 Trusted Publisher 配置命令，GitHub 仓库地址保持不变。
+- 保留旧 npm 包及其已发布版本；节点和凭证的运行逻辑保持不变。
+
 ## 0.4.7 - 2026-11-03
 
 - npm Trusted Publishing 首次授权完成后的自动发布验证版本。

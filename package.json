@@ -1,6 +1,6 @@
 {
-  "name": "@songlipeng2003/n8n-nodes-feishu-lite",
-  "version": "0.4.7",
+  "name": "@songlipeng2003/n8n-nodes-feishu",
+  "version": "0.4.8",
   "description": "feishu node",
   "keywords": [
     "n8n-community-node-package",
