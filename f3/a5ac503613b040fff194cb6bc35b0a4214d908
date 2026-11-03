@@ -1,0 +1,19 @@
+README.md
+  s_d79b90904ed870::t_beac28f727ea0c 27
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "f3a5ac503613b040fff194cb6bc35b0a4214d908",
+  "prompts": {},
+  "sessions": {
+    "s_d79b90904ed870": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a1a016-16f0-7a72-bfd8-55f1ac865b7c",
+        "model": "gpt-6.1-sol"
+      },
+      "human_author": "Peter Song <123wuming_123@163.com>"
+    }
+  }
+}
