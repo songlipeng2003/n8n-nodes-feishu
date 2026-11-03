@@ -1,0 +1,30 @@
+README.md
+  s_d79b90904ed870::t_33b74fd1e696c2 1,16-53,57-59
+  s_d79b90904ed870::t_1cfa05419d00ea 54-56
+scripts/release-info.cjs
+  s_d79b90904ed870::t_33b74fd1e696c2 1-30
+test/release-info.test.cjs
+  s_d79b90904ed870::t_33b74fd1e696c2 1-29
+CHANGELOG.md
+  s_d79b90904ed870::t_33b74fd1e696c2 10-11
+package.json
+  s_d79b90904ed870::t_33b74fd1e696c2 2,32-33
+.github/workflows/publish-npm.yml
+  s_d79b90904ed870::t_33b74fd1e696c2 1-108
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "7338c233842f2f5773d44273afe85bb4c0768183",
+  "prompts": {},
+  "sessions": {
+    "s_d79b90904ed870": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a1a016-16f0-7a72-bfd8-55f1ac865b7c",
+        "model": "gpt-6.1-sol"
+      },
+      "human_author": "Peter Song <123wuming_123@163.com>"
+    }
+  }
+}
