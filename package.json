@@ -1,6 +1,6 @@
 {
   "name": "@songlipeng2003/n8n-nodes-feishu",
-  "version": "0.4.8",
+  "version": "0.4.9",
   "description": "feishu node",
   "keywords": [
     "n8n-community-node-package",
@@ -8,14 +8,14 @@
     "飞书"
   ],
   "license": "MIT",
-  "homepage": "https://github.com/songlipeng2003/n8n-nodes-feishu-lite#readme",
+  "homepage": "https://github.com/songlipeng2003/n8n-nodes-feishu#readme",
   "author": {
-    "name": "blowsnow",
-    "email": "im.blowsnow@gmail.com"
+    "name": "songlipeng2003",
+    "email": "songlipeng2003@gmail.com"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/songlipeng2003/n8n-nodes-feishu-lite.git"
+    "url": "git+https://github.com/songlipeng2003/n8n-nodes-feishu.git"
   },
   "engines": {
     "node": ">=18.10",
@@ -68,7 +68,7 @@
     "xml-js": "^1.6.11"
   },
   "bugs": {
-    "url": "https://github.com/songlipeng2003/n8n-nodes-feishu-lite/issues"
+    "url": "https://github.com/songlipeng2003/n8n-nodes-feishu/issues"
   },
   "publishConfig": {
     "access": "public",

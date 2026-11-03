@@ -19,7 +19,7 @@
 
 ## 从旧包迁移
 
-从 `0.4.8` 起，个人维护分支的 npm 包名由 `@songlipeng2003/n8n-nodes-feishu-lite` 调整为 `@songlipeng2003/n8n-nodes-feishu`。GitHub 仓库仍为 `songlipeng2003/n8n-nodes-feishu-lite`，旧 npm 包及其已发布版本保留不动。
+从 `0.4.8` 起，个人维护分支的 npm 包名由 `@songlipeng2003/n8n-nodes-feishu-lite` 调整为 `@songlipeng2003/n8n-nodes-feishu`。GitHub 仓库为 `songlipeng2003/n8n-nodes-feishu`，旧 npm 包及其已发布版本保留不动。
 
 在 n8n 的社区节点设置中使用新包名 `@songlipeng2003/n8n-nodes-feishu` 安装。请先备份工作流和凭证，再移除旧包并安装新包，不要同时安装两个包。节点及凭证的内部名称和功能不变，但已有工作流中的完整节点类型可能包含旧包名前缀，迁移后应检查并重新选择对应节点。
 
@@ -33,7 +33,7 @@
 2. 新包必须先通过已登录的 npm 账号执行一次 `npm publish --access public`，完成首次创建。 若 npm 返回双因素验证相关的 `403`，需要在本机终端使用 `--otp` 参数完成验证；不要将一次性验证码或 Token 发到聊天、写入工作流或提交到仓库。
 3. 在 npm 包设置的 **Trusted publishing** 中添加 GitHub Actions，填写：
    - Organization or user：`songlipeng2003`
-   - Repository：`n8n-nodes-feishu-lite`
+   - Repository：`n8n-nodes-feishu`
    - Workflow filename：`publish-npm.yml`（不要填写完整路径）
    - Environment name：留空
    - 允许直接执行 **npm publish**
@@ -41,7 +41,7 @@
 
 ```bash
 npm trust github @songlipeng2003/n8n-nodes-feishu \
-  --repo songlipeng2003/n8n-nodes-feishu-lite \
+  --repo songlipeng2003/n8n-nodes-feishu \
   --file publish-npm.yml --allow-publish --yes
 ```
 

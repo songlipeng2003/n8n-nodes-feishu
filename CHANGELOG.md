@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.4.9 - 2026-11-03
+
+- 更新 npm 作者信息为 songlipeng2003。
+- 同步主页、源码仓库、问题反馈地址及发布授权说明至更名后的 songlipeng2003/n8n-nodes-feishu 仓库。
+- 通过新版本 tag 验证更名后仓库的自动构建及 npm Trusted Publishing 发布流程；节点和凭证运行逻辑保持不变。
+
 ## 0.4.8 - 2026-11-03
 
 - 将 npm 包名从 @songlipeng2003/n8n-nodes-feishu-lite 改为 @songlipeng2003/n8n-nodes-feishu。
