@@ -1,0 +1,21 @@
+CHANGELOG.md
+  s_d79b90904ed870::t_68b9675f55034e 3-8
+package.json
+  s_d79b90904ed870::t_f9e7d9ff42d023 3
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "6123f3c0fb636ade94c0ed4373934bfb7d9eb4b4",
+  "prompts": {},
+  "sessions": {
+    "s_d79b90904ed870": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a1a016-16f0-7a72-bfd8-55f1ac865b7c",
+        "model": "gpt-6.1-sol"
+      },
+      "human_author": "Peter Song <123wuming_123@163.com>"
+    }
+  }
+}
